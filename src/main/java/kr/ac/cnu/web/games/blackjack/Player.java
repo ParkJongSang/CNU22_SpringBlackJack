@@ -69,4 +69,8 @@ public class Player {
     public void stand() {
         this.isPlaying = false;
     }
+    //플레이어의 패를 받아온다
+    public Hand getHand() {
+        return this.hand;
+    }
 }
