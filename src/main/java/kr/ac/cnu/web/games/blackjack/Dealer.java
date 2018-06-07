@@ -33,4 +33,8 @@ public class Dealer {
             hand.drawCard();
         }
     }
+    //딜러의 패를 받아온다
+    public Hand getHand() {
+        return this.hand;
+    }
 }
