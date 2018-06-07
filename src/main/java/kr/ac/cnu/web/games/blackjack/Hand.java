@@ -5,6 +5,8 @@ import lombok.Getter;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.stream.Stream;
+
 /**
  * Created by rokim on 2018. 5. 26..
  * Modified by manseongkim on 2018. 6. 8..
@@ -27,6 +29,11 @@ public class Hand {
     }
     //카드 총합 계산
     public int getCardSum() {
+        Stream<Card> x = cardList.stream().filter(card -> card.getRank()>10);
+        Card[] JQK = x.toArray(Card[]::new);
+        for(int i=0;i<JQK.length;i++){
+            JQK[i].setRank(10);
+        }
         //카드 리스트에 담긴 카드의 숫자를 모두 더한다
         return cardList.stream().mapToInt(card -> card.getRank()).sum();
     }
