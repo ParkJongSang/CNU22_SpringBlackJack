@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 //플레이어 구현
 public class Player {
     @Getter
-    private long balance; //기준치, 시드머니를 의미
+    private long balance; //기준치, 여기선 시드머니를 의미
     @Getter
     private long currentBet; //현재 배팅 금액
     @Getter
