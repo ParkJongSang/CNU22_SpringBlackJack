@@ -32,25 +32,33 @@ public class Hand {
 
     //카드 총합 계산
     public int getCardSum() {
-        int sum = 0;
+        int sum = 0; //총합 0 초기화
+        //카드 리스트에 담겨있는 카드들을 스트림 객체배열로 재구성
         Card[] ArrayOfCardList = cardList.stream().toArray(Card[]::new);
+        //카드 리스트 배열의 길이만큼 반복 수행
         for (int i = 0; i < ArrayOfCardList.length; i++) {
+            //카드에 적힌 Rank 가 아닌, 실제 블랙잭 게임에서 매겨지는 점수(숫자)
             int realValue = ArrayOfCardList[i].getRank();
+            //J,Q,K일 때, 점수 10으로 계산
             if (realValue == 11 || realValue == 12 || realValue == 13) {
                 sum += 10;
             }
+            //ACE 카드라면,
             else if (realValue == 1) {
+                //총합이 21을 넘겨 파산할 경우 +1
                 if ((sum + 11) > 21)
                     sum += 1;
+                //그렇지 아니할 경우 +11
                 else
                     sum += 11;
             }
+            //그 외의 경우(2~10)
             else {
-                //카드 리스트에 담긴 카드의 숫자를 모두 더한다
+                //그대로 점수 계산
                 sum += realValue;
             }
         }
-        return sum;
+        return sum; //총합 반환
     }
 
     //패 초기화
