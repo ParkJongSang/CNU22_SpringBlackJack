@@ -10,8 +10,9 @@ import lombok.Data;
 //카드구현
 @Data
 public class Card {
-    private int rank; //숫자
+    private final int rank; //숫자
     private final Suit suit; //문양
+
     //Constructor of Card
     public Card(int rank, Suit suit) {
         //숫자가 13보다 크면 예외처리
@@ -22,11 +23,9 @@ public class Card {
         this.rank = rank;
         this.suit = suit;
     }
+
     //카드의 숫자를 읽어온다
     public int getRank() {
         return this.rank;
-    }
-    public void setRank(int rank) {
-        this.rank = rank;
     }
 }
