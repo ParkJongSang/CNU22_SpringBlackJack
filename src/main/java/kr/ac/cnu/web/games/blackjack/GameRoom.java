@@ -23,6 +23,7 @@ public class GameRoom {
     @Getter
     private boolean isFinished; //턴 종료 판별
     private final Evaluator evaluator; //점수 비교기
+
     //Constructor of GameRoom
     public GameRoom(Deck deck) {
         this.roomId = UUID.randomUUID().toString();
@@ -32,6 +33,7 @@ public class GameRoom {
         this.evaluator = new Evaluator(playerList, dealer);
         this.isFinished = true;
     }
+
     //플레이어 추가
     public void addPlayer(String playerName, long seedMoney) {
         //시드머니와 덱에서 받은 카드(패)로 플레이어 생성
@@ -39,22 +41,26 @@ public class GameRoom {
         //플레이어 리스트에 추가
         playerList.put(playerName, player);
     }
+
     //플레이어 삭제
     public void removePlayer(String playerName) {
         //플레이어 리스트에서 제거
         playerList.remove(playerName);
     }
+
     //게임 초기화
     public void reset() {
         dealer.reset(); //딜러의 패 초기화
         playerList.forEach((s, player) -> player.reset()); //모든 플레이어의 패 초기화
     }
+
     //금액 배팅
     public void bet(String name, long bet) {
         Player player = playerList.get(name);
         //name 키 값을 가지는 플레이어는 bet 금액만큼 배팅한다
         player.placeBet(bet);
     }
+
     //패를 돌린다. 즉, 게임시작을 의미한다.
     public void deal() {
         //게임 진행중
@@ -62,18 +68,21 @@ public class GameRoom {
         dealer.deal(); //딜러는 한장의 카드를 드로우
         playerList.forEach((s, player) -> player.deal()); //플레이어는 2장의 카드를 드로우
     }
+
     //히트: 플레이어가 처음 2장의 카드 상태에서 한 장의 카드를 더 뽑는 것
     public Card hit(String name) {
         Player player = playerList.get(name);
         //해당 플레어어는 카드 한 장을 더 뽑는다
         return player.hitCard();
     }
+
     //스탠드: 플레이어는 카드를 뽑지 않고 턴을 종료
     public void stand(String name) {
         Player player = playerList.get(name);
         //해당 플레이어 스탠드
         player.stand();
     }
+
     //딜러의 플레이
     public void playDealer() {
         dealer.play(); //딜러는 자신의 카드 총합이 17 이상 일때까지 히트한 후
