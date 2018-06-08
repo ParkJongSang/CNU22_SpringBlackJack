@@ -23,18 +23,17 @@ public class Evaluator {
         }
         //딜러의 점수결과는 딜러의 패를 모두 합한 값이다
         int dealerResult = dealer.getHand().getCardSum();
-        //딜러의 점수가 21을 초과하면 딜러는 버스트 되고 모든 플레이어는 승리한다(true 반환)
-        if (dealerResult > 21) {
-            playerMap.forEach((s, player) -> player.win());
-            return true;
-        }
         //플레이어의 점수 비교(true 반환)
         playerMap.forEach((s, player) -> {
             //플레이어의 점수결과는 플레이어의 패를 모두 합한 값이다
             int playerResult = player.getHand().getCardSum();
-            //플레이어의 점수가 21을 초과하면 해당 플레이어는 패한다
+            //플레이어의 점수가 21을 초과하면 해당 플레이어는 딜러의 점수와 관게없이 무조건 패한다
             if (playerResult > 21) {
                 player.lost();
+            }
+            //플레이어어가 버스트되지 않은 상태에서 딜러가 버스트 될때 모든 플레이어는 승리한다
+            else if (dealerResult > 21) {
+                player.win();
             }
             //플레이어의 점수가 딜러의 점수보다 높으면 해당 플레이어는 승리한다
             else if (playerResult > dealerResult) {
