@@ -531,9 +531,10 @@
     })
 
     $('#more').click(function(){
-        var bet = 100;
+        var bet = 1000;
         var currentBet = parseInt($('#bet').html());
         var money = parseInt($('#money').html());
+        <!-- 플레이어의 시드머니가 배팅 기본금액보다 적을경우 시드머니 전부를 배팅한다 -->
         if (money < bet) {
             bet = money;
         }
@@ -543,9 +544,10 @@
     });
 
     $('#less').click(function(){
-        var bet = 100;
+        var bet = 1000;
         var currentBet = parseInt($('#bet').html());
         var money = parseInt($('#money').html());
+        <!-- 현재배팅금액이 배팅 기본금액보다 적을경우 그 금액만큼만 시드머니로 찾아온다 -->
         if(currentBet < bet) {
             bet = currentBet;
         }
