@@ -17,6 +17,7 @@ public class Deck {
     private final int number; //덱의 수, 기본덱은 52장의 카드로 구성
     @Getter
     private final List<Card> cardList; //카드 리스트
+
     //덱의 수만큼 받아와 하나로 합쳐서 실제 게임에서 플레이할 하나의 덱을 완성
     public Deck(int number) {
         this.number = number;
@@ -24,6 +25,7 @@ public class Deck {
         createCards(number);
         Collections.shuffle(cardList); //셔플(모든 카드를 섞는다)
     }
+
     //카드 생성 함수
     private void createCards(int number) {
         //덱의 수만큼 반복
@@ -31,13 +33,14 @@ public class Deck {
             //문양 반복(하트,스페이드,클럽,다이아)
             for (Suit suit : Suit.values()) {
                 //숫자 반복(1,2,...,10,J,Q,K)
-                for (int i = 1 ; i < 14; i++) {
+                for (int i = 1; i < 14; i++) {
                     Card card = new Card(i, suit); //카드 생성
                     cardList.add(card); //카드 리스트에 추가
                 }
             }
         }
     }
+
     //카드 한장을 드로우
     public Card drawCard() {
         //카드 리스트에 카드가 없을 경우

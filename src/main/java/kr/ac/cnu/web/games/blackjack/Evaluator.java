@@ -10,11 +10,13 @@ import java.util.Map;
 public class Evaluator {
     private Map<String, Player> playerMap; //게임에 참여한 플레이어들을 key-value 로 매핑하여 구분
     private Dealer dealer; //딜러
+
     //Constructor of Evaluator
     public Evaluator(Map<String, Player> playerMap, Dealer dealer) {
         this.playerMap = playerMap;
         this.dealer = dealer;
     }
+
     //점수 비교 함수 (boolean 값)
     public boolean evaluate() {
         //해당 플레이어가 게임 진행중이면 점수 비교 불가(false 반환)

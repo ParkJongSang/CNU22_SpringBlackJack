@@ -76,7 +76,7 @@ public class GameRoom {
         Card hitCard = player.hitCard();
         int hitResult = player.getHand().getCardSum();
         //히트한 후, 총합이 21을 넘으면 바로 게임 종료
-        if(hitResult > 21){
+        if (hitResult > 21) {
             player.stand(); //스탠드
             this.isFinished = true; //턴 종료
         }
