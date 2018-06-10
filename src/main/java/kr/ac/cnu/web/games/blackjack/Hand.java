@@ -5,8 +5,6 @@ import lombok.Getter;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.stream.Stream;
-
 /**
  * Created by rokim on 2018. 5. 26..
  * Modified by manseongkim on 2018. 6. 8..
@@ -28,6 +26,11 @@ public class Hand {
         Card card = deck.drawCard();
         cardList.add(card);
         return card;
+    }
+
+    //패의 카드 수
+    public int getNumberOfCards(){
+        return this.cardList.size();
     }
 
     //카드 총합 계산
