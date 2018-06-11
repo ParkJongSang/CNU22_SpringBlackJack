@@ -20,12 +20,12 @@ public class User {
     private long account; //계좌 잔고
 
     //유저 이름을 받아온다
-    public String getName() {
+    /*public String getName() {
         return this.name;
     }
 
     //계좌 잔고를 받아온다
     public long getAccount() {
         return this.account;
-    }
+    }*/
 }

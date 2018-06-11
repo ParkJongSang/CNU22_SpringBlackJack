@@ -98,7 +98,7 @@ public class GameRoom {
         this.isFinished = true; //턴 종료
     }
     //테이블 아이디(룸아이디)를 받아온다
-    public String getRoomId() {
+    /*public String getRoomId() {
         return this.roomId;
-    }
+    }*/
 }
