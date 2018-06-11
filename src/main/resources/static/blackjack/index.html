@@ -402,6 +402,10 @@
             color: green;
             font-size: 21px;
         }
+
+        #playerId, #playerMoney {
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -418,6 +422,7 @@
     </div>
 </div>
 <div class="page" id="game" style="display: none">
+    <div>이름: <div id="playerId"></div> 보유금액: <div id="playerMoney"></div></div>
     <div class="dealer-cards"></div>
     <div class="clear"></div>
     <div class="player-cards"></div>
@@ -614,6 +619,9 @@
 
         $('#bet').html(gameRoom.playerList[user.name].currentBet);
         $('#money').html(gameRoom.playerList[user.name].balance);
+
+        $('#playerId').html(user.name); // [기능 추가] 화면 제일 윗쪽에 내 이름과 현재 내가 보유한 금액을 표시하기
+        $('#playerMoney').html(gameRoom.playerList[user.name].balance);
     }
 
     function generateCardDiv(rank, suit) {
