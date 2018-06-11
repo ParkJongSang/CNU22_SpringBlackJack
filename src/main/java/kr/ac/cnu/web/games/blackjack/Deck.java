@@ -43,6 +43,11 @@ public class Deck {
 
     //카드 한장을 드로우
     public Card drawCard() {
+        //카드 리스트에 카드가 10장 이하인 경우
+        if(cardList.size () <= 10){
+            createCards ( number );
+            //카드리스트를 새로 덱에 추가한다.
+        }
         //카드 리스트에 카드가 없을 경우
         if (cardList.size() == 0) {
             // TODO 실제 게임에서 이런 일이 절대로 일어나면 안되겠죠?

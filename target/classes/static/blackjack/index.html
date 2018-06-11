@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Welcome to 22's SpringBlackjack</title>
 </head>
     <style>
         /* Reset */
@@ -409,6 +409,7 @@
     <div>
         <input type="text" id="input_login_name" />
         <div class="buttons"><div class="btn" id="login_button">Login</div></div>
+        <div class="buttons"><div class="btn" id="signup_button">SignUp</div></div>
     </div>
 </div>
 <div class="page" id="lobby" style="display: none">
@@ -421,7 +422,7 @@
     <div class="clear"></div>
     <div class="player-cards"></div>
     <div class="buttons"><div class="btn" id="hit">Hit</div><div class="btn" id="stand">Stand</div></div>
-    <div class="buttons"><div class="btn" id="deal">Deal</div></div>
+    <div class="buttons"><div class="btn" id="deal">Deal</div></div><div class="buttons"><div class="btn" id="doubledown">Doubledown</div></div>
     <div class="betting-area">
         <b>Your Bet</b><br>
         <div id="bet" class="bet money">0</div>
@@ -449,6 +450,21 @@
         $.ajax({
             type: 'POST',
             url: 'http://localhost:8080/api/black-jack/login',
+            data: loginName,
+            contentType:'application/json;'
+        }).done(function(data) {
+            $('#login').hide();
+            $('#lobby').show();
+            user = data;
+        });
+    });
+
+
+    $('#signup_button').click(function() {
+        var loginName = $('#input_login_name').val();
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8080/api/black-jack/users',
             data: loginName,
             contentType:'application/json;'
         }).done(function(data) {
@@ -514,10 +530,29 @@
         });
     })
 
+    $('#doubledown').click(function() {
+        var bet = parseInt($('#bet').html());
+
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8080/api/black-jack/rooms/' + gameRoomId + '/doubledown',
+            headers: {
+                'name':user.name
+            },
+            data: JSON.stringify(bet),
+            contentType:'application/json;',
+        }).done(function(data) {
+            drawGameRoom(data);
+            $('#hit').hide();
+            $('#doubledown').hide();
+        });
+    })
+
     $('#more').click(function(){
-        var bet = 100;
+        var bet = 1000;
         var currentBet = parseInt($('#bet').html());
         var money = parseInt($('#money').html());
+        <!-- 플레이어의 시드머니가 배팅 기본금액보다 적을경우 시드머니 전부를 배팅한다 -->
         if (money < bet) {
             bet = money;
         }
@@ -527,9 +562,10 @@
     });
 
     $('#less').click(function(){
-        var bet = 100;
+        var bet = 1000;
         var currentBet = parseInt($('#bet').html());
         var money = parseInt($('#money').html());
+        <!-- 현재배팅금액이 배팅 기본금액보다 적을경우 그 금액만큼만 시드머니로 찾아온다 -->
         if(currentBet < bet) {
             bet = currentBet;
         }
@@ -546,12 +582,14 @@
             $('#less').show();
             $('#hit').hide();
             $('#stand').hide();
+            $('#doubledown').hide();
         } else {
             $('#deal').hide();
             $('#more').hide();
             $('#less').hide();
             $('#hit').show();
             $('#stand').show();
+            $('#doubledown').show();
         }
 
         $('.dealer-cards').html("");

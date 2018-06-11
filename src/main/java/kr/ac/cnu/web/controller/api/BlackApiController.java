@@ -81,6 +81,13 @@ public class BlackApiController {
         return blackjackService.stand(roomId, user);
     }
 
+    @PostMapping("/rooms/{roomId}/doubledown")
+    public GameRoom stand(@RequestHeader("name") String name, @PathVariable String roomId, @RequestBody long betMoney) {
+        User user = this.getUserFromSession(name);
+
+        return blackjackService.doubledown (roomId, user, betMoney);
+    }
+
     @GetMapping("/rooms/{roomId}")
     public GameRoom getGameRoomData(@PathVariable String roomId) {
         return blackjackService.getGameRoom(roomId);
