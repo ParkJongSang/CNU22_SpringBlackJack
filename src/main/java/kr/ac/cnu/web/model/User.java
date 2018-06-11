@@ -16,6 +16,16 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class User {
     @Id
-    private String name;
-    private long account;
+    private String name; //유저 이름
+    private long account; //계좌 잔고
+
+    //유저 이름을 받아온다
+    public String getName() {
+        return this.name;
+    }
+
+    //계좌 잔고를 받아온다
+    public long getAccount() {
+        return this.account;
+    }
 }
