@@ -11,35 +11,39 @@ import java.util.Map;
 /**
  * Created by rokim on 2018. 5. 26..
  */
+//블랙잭서비스 구현
 @Service
 public class BlackjackService {
     private final int DECK_NUMBER = 1;
     private final Map<String, GameRoom> gameRoomMap = new HashMap<>();
 
+    //게임 테이블 생성
     public GameRoom createGameRoom(User user) {
-        Deck deck = new Deck(DECK_NUMBER);
+        Deck deck = new Deck(DECK_NUMBER); //덱 생성
 
-        GameRoom gameRoom = new GameRoom(deck);
-        gameRoom.addPlayer(user.getName(), user.getAccount());
-
+        GameRoom gameRoom = new GameRoom(deck); //테이블 생성
+        gameRoom.addPlayer(user.getName(), user.getAccount()); //플레이어 추가
+        //테이블 맵에 룸아이디 지정하여 추가
         gameRoomMap.put(gameRoom.getRoomId(), gameRoom);
 
-        return gameRoom;
+        return gameRoom; //테이블 반환
     }
 
+    //여러 명의 플레이어가 참여하는 게임 테이블 생성
     public GameRoom joinGameRoom(String roomId, User user) {
-        // multi player Game 이 아니므로 필요가 없다.
-        return null;
+        //보류 (미완성)
     }
 
     public void leaveGameRoom(String roomId, User user) {
         gameRoomMap.get(roomId).removePlayer(user.getName());
     }
 
+    //테이블 맵으로부터 룸아이디에 해당하는 테이블을 받아온다
     public GameRoom getGameRoom(String roomId) {
         return gameRoomMap.get(roomId);
     }
 
+    //배팅
     public GameRoom bet(String roomId, User user, long bet) {
         GameRoom gameRoom = gameRoomMap.get(roomId);
 
@@ -50,6 +54,7 @@ public class BlackjackService {
         return gameRoom;
     }
 
+    //히트
     public GameRoom hit(String roomId, User user) {
         GameRoom gameRoom = gameRoomMap.get(roomId);
 
@@ -58,6 +63,7 @@ public class BlackjackService {
         return gameRoom;
     }
 
+    //스탠드
     public GameRoom stand(String roomId, User user) {
         GameRoom gameRoom = gameRoomMap.get(roomId);
 
@@ -67,11 +73,12 @@ public class BlackjackService {
         return gameRoom;
     }
 
+    //더블다운
     public GameRoom doubledown(String roomId, User user, long bet) {
         GameRoom gameRoom = gameRoomMap.get(roomId);
 
-        gameRoom.bet(user.getName(), bet*2);
-        gameRoom.hit ( user.getName () );
+        gameRoom.bet(user.getName(), bet * 2);
+        gameRoom.hit(user.getName());
 
         return gameRoom;
     }
