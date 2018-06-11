@@ -538,9 +538,10 @@
         if (money < bet) {
             bet = money;
         }
-
-        $('#bet').html(currentBet + bet);
-        $('#money').html(money - bet);
+        if (currentBet != 10000) { // [기능 추가] betting 상한선을 10000원으로 제한
+            $('#bet').html(currentBet + bet);
+            $('#money').html(money - bet);
+        }
     });
 
     $('#less').click(function(){
