@@ -96,7 +96,13 @@
             background-position: -158px -492px !important;
         }
 
-
+        .test {
+        background-color: #A9014B;
+        text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
+            border-radius: 5px;
+        color: white;
+        text-align: center;
+        }
         .btn {
             font: bold 13px "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important;
             text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
@@ -422,7 +428,7 @@
     </div>
 </div>
 <div class="page" id="game" style="display: none">
-    <div>이름: <div id="playerId"></div> 보유금액: <div id="playerMoney"></div></div>
+    <div class="test">이름: <div id="playerId"></div><br> 보유금액: <div id="playerMoney"></div></div>
     <div class="dealer-cards"></div>
     <div class="clear"></div>
     <div class="player-cards"></div>
@@ -475,6 +481,7 @@
         }).done(function(data) {
             $('#login').hide();
             $('#lobby').show();
+            alert("login ok");
             user = data;
         });
     });
