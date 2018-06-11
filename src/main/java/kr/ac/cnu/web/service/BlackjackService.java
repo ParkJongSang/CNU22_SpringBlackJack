@@ -32,6 +32,7 @@ public class BlackjackService {
     //여러 명의 플레이어가 참여하는 게임 테이블 생성
     public GameRoom joinGameRoom(String roomId, User user) {
         //보류 (미완성)
+        return null;
     }
 
     public void leaveGameRoom(String roomId, User user) {
