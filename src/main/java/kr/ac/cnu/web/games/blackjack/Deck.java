@@ -47,15 +47,9 @@ public class Deck {
         if(cardList.size () <= 10){
             createCards ( number );
             //카드리스트를 새로 덱에 추가한다.
+            Collections.shuffle(cardList); //다시 셔플(모든 카드를 섞는다)
         }
-        //카드 리스트에 카드가 없을 경우
-        if (cardList.size() == 0) {
-            // TODO 실제 게임에서 이런 일이 절대로 일어나면 안되겠죠?
-            // 그래서 보통 게임에서는 N 장의 카드가 남으면 모든 카드를 합쳐서 다시 셔플 합니다.
-            // 코드에 그런 내용이 들어가야 함.
-            throw new NoMoreCardException(); //더 이상 카드가 없으므로 예외처리
-        }
-        //카드 리스트에서 꺼낸
+        //카드 리스트(덱의 맨 윗장)에서 한 장의 카드를 제거
         return cardList.remove(0);
     }
 }
