@@ -170,6 +170,7 @@ img {
 #game {
     background-image: url("./blackjackBoard.png");
     height: 100%;
+    z-index: -1;
 }
 
 #lobby {
@@ -208,6 +209,11 @@ img {
     position: absolute;
     top: 16%;
     left: 6%;
+}
+
+.whiteBoard {
+    background-color: white;
+    margin: 0 20%;
 }
 
 .clear {
