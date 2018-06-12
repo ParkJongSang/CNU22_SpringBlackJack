@@ -7,8 +7,8 @@ html {
     vertical-align: baseline;
 }
 
-header, footer {
-    padding: 1em;
+header {
+    padding: 10px;
     background-color: black;
 }
 
