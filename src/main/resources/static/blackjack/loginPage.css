@@ -145,7 +145,7 @@ img {
 }
 
 @-webkit-keyframes blink {
-    0% {background-color: black; color: #0099ff}
+    0% {background-color: black; color: #0099ff;}
     50% {background-color: #66ff66; color: red;}
 }
 
