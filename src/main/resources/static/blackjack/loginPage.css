@@ -93,9 +93,9 @@ body {
 }
 
 .startMenu {
-    position: static;
-    right: 80px;
-    top: 200px;
+    position: absolute;
+    right: 60px;
+    top: 180px;
 }
 
 .clear {
