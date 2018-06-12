@@ -250,7 +250,7 @@ img {
 }
 
 .test {
-    background-color: #A9014B;
+    background-color: #0099ff;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     color: white;
@@ -270,7 +270,7 @@ img {
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    background-color: #A9014B;
+    background-color: #0099ff;
     border-style: none;
     text-align: center;
     overflow: visible;
