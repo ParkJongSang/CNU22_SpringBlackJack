@@ -7,7 +7,12 @@ html {
     vertical-align: baseline;
 }
 
+nav {
+    position: absolute;
+}
+
 header {
+    position: absolute;
     padding: 8px;
     background-color: black;
 }
