@@ -16,8 +16,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 header {
     position: relative;
     margin: 0;
-    padding: 100%;
+    padding: 30px;
     border: 1px solid black;
+    background-image: url("./diamond.jpg");
 }
 
 h1 {
@@ -47,10 +48,6 @@ body {
     color: #333;
     font-size: 15px;
     line-height: 40px;
-}
-
-header #topBanner {
-    background-image: url("./diamond.jpg");
 }
 
 .clear {
