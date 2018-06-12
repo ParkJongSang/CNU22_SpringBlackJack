@@ -1,4 +1,4 @@
-/* Reset */
+/* Styling the Blackjack Web page */
 html {
     margin: 0;
     padding: 0;
@@ -35,7 +35,7 @@ body {
 }
 
 #login {
-    background-image: url("./open.png") ;
+    background-image: url("./open.png");
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -44,17 +44,52 @@ body {
 
 #topBanner {
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
-    color: #008ae6;
+    color: #0099ff;
     font-weight: bold;
-    font-size: 23px;
+    font-size: 22px;
     text-align: center;
 }
 
 #bottomBanner {
     color: #CCCCCC;
     font-size: 10px;
-    text-indent: 10px;
+    text-indent: 16px;
     text-align: justify;
+}
+
+#playerId, #playerMoney {
+    display: inline-block;
+}
+
+#login_button, signup_button {
+    font: bold 13px "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    color: #0000cc;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: black;
+    border-style: none;
+    text-align: center;
+    overflow: visible;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 10px;
+    height: 40px;
+    width: 100px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
 }
 
 .clear {
@@ -94,7 +129,7 @@ body {
 
 .buttons {
     width: 210px;
-    margin: 20px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
 
 .flipped {
@@ -406,8 +441,4 @@ body {
 .money {
     color: green;
     font-size: 21px;
-}
-
-#playerId, #playerMoney {
-    display: inline-block;
 }
