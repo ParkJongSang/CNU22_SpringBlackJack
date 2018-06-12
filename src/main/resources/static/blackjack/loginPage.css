@@ -94,8 +94,15 @@ body {
 
 .startMenu {
     position: absolute;
-    right: 60px;
-    top: 180px;
+    right: 10%;
+    top: 45%;
+}
+
+#login_button:hover, #signup_button:hover,
+#login_button:focus, #signup_button:focus {
+    background-position: 0 -50px;
+    color: white;
+    background-color: #c90059;
 }
 
 .clear {
