@@ -57,7 +57,7 @@ img {
     background-position: center;
 }
 
-#topBanner {
+.topBanner {
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     color: #0099ff;
     font-weight: bold;
@@ -65,7 +65,7 @@ img {
     text-align: center;
 }
 
-#bottomBanner {
+.bottomBanner {
     color: #CCCCCC;
     font-size: 10px;
     text-indent: 16px;
