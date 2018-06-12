@@ -43,10 +43,6 @@ body {
     line-height: 40px;
 }
 
-input {
-    margin-top: 1px;
-}
-
 #login {
     background-image: url("./open.png");
     height: 100%;
@@ -108,7 +104,7 @@ input {
 .startMenu {
     position: absolute;
     right: 6%;
-    top: 20%;
+    top: 22%;
     text-align: left;
 }
 
