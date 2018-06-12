@@ -170,9 +170,6 @@ img {
 #game {
     background-image: url("./blackjackBoard.png");
     height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
 }
 
 #lobby {
