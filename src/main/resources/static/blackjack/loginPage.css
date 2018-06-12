@@ -21,6 +21,7 @@ header {
     background-image: url("./open.jpg");
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center fixed;
 }
 
 header #topBanner {
