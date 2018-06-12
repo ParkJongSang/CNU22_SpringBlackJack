@@ -76,9 +76,11 @@ img {
 }
 
 #input_login_name {
+    font: bold 13px "Helvetica Neue", Helvetica, Arial, clean, sans-serif;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
+    width: 210px;
 }
 
 #login_button, #signup_button {
