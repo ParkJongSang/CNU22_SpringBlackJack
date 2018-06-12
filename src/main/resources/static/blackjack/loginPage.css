@@ -94,8 +94,8 @@ body {
 
 .startMenu {
     position: absolute;
-    right: 10%;
-    top: 45%;
+    right: 6%;
+    top: 40%;
 }
 
 #login_button:hover, #signup_button:hover,
