@@ -1,6 +1,6 @@
 /* Reset */
 html {
-    margin: 10px 0px 0px 0px;
+    margin: 10px 0px 0px;
     padding: 0;
     border: 0;
     font-size: 100%;
@@ -18,8 +18,8 @@ header {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    bottom: 0px;
     padding: 1px;
     background-color: black;
 }
