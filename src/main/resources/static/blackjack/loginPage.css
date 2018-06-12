@@ -14,26 +14,15 @@ body {
     line-height: 40px;
 }
 
-header {
+#login {
     margin: auto;
-    padding: 60px;
+    padding: 100%;
     border: 1px solid black;
     background: url("./open.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-header #topBanner {
-
-}
-
-footer {
-    margin: auto;
-    padding: 20px;
-    border: 1px solid black;
-    background-image: -we;
 }
 
 .clear {

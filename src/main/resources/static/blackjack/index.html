@@ -6,8 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./loginPage.css">
 </head>
 <body>
-<div class="page" id="login">
-    <header id="topBanner"></header>
+<nav class="page" id="login">
     <div>
         <input type="text" id="input_login_name"/>
         <div class="buttons">
@@ -17,16 +16,15 @@
             <div class="btn" id="signup_button">SignUp</div>
         </div>
     </div>
-    <footer id="bottomBanner"></footer>
-</div>
-<div class="page" id="lobby" style="display: none">
+</nav>
+<nav class="page" id="lobby" style="display: none">
     <div>
         <div class="buttons">
             <div class="btn" id="create_room_button">Create</div>
         </div>
     </div>
-</div>
-<div class="page" id="game" style="display: none">
+</nav>
+<nav class="page" id="game" style="display: none">
     <div class="test">이름:
         <div id="playerId"></div>
         <br> 보유금액:
@@ -59,7 +57,7 @@
         <span id="money" class="money"></span>
         <div class="clear"></div>
     </div>
-</div>
+</nav>
 </body>
 <script src="./jquery-3.3.1.min.js"></script>
 
