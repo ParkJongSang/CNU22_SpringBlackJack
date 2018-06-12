@@ -133,22 +133,6 @@ img {
     background-color: #0099ff;
 }
 
-.blinkcss {
-    font-weight:bold;
-    animation: blink 1s step-end infinite;
-    -webkit-animation: blink 1s step-end infinite;
-}
-
-@keyframes blink {
-    0% {background-color: black;}
-    50% {background-color: #66ff66;}
-}
-
-@-webkit-keyframes blink {
-    0% {background-color: black;}
-    50% {background-color: #66ff66;}
-}
-
 .blinking {
     -webkit-animation: blink 0.6s ease-in-out infinite alternate;
     -moz-animation: blink 0.6s ease-in-out infinite alternate;
