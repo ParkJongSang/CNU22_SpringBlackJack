@@ -93,7 +93,7 @@ body {
 }
 
 .startMenu {
-    position: absolute;
+    position: relative;
     right: 80px;
     top: 200px;
 }
