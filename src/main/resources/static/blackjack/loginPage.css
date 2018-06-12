@@ -169,9 +169,12 @@ img {
 
 #game:after {
     background-image: url("./blackjackBoard.png");
+    position: absolute;
     height: 100%;
     background-repeat: repeat;
-    opacity:0.5!important;
+    opacity: 0.5 !important;
+    filter: alpha(opacity=50);
+    z-index: -1;
 }
 
 #lobby {
