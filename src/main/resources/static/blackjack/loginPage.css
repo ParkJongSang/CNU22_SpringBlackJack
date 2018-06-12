@@ -3,6 +3,7 @@ html {
     margin: 10px 0px 0px;
     padding: 0;
     border: 0;
+    height: 100%;
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -18,8 +19,6 @@ header {
 }
 
 footer {
-    width: 900px;
-    height: window.screen.height - 500px;
     padding: 0.6em;
     background-color: black;
 }
