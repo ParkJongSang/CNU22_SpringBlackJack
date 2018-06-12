@@ -8,14 +8,13 @@ html {
 }
 
 header {
-    height: 25px;
+    padding: 8px;
     background-color: black;
 }
 
 footer {
     position: absolute;
     bottom: 0;
-    height: 12px;
     padding: 1px;
     background-color: black;
 }
