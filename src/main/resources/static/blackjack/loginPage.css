@@ -8,9 +8,9 @@ html, body, div {
 }
 
 header {
-    margin: 0;
-    border: 0;
-    padding: 10px;
+    padding: 1em;
+    background-color: black;
+    clear: both;
 }
 
 body {
