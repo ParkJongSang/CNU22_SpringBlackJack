@@ -92,6 +92,11 @@ body {
     box-sizing: border-box; /* Opera/IE 8+ */
 }
 
+.startMenu {
+    margin-top: 200px;
+    margin-right: 80px;
+}
+
 .clear {
     clear: both;
 }
