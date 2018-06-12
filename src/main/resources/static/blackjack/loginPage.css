@@ -3,19 +3,17 @@ html {
     margin: 10px 0px;
     padding: 0;
     border: 0;
-    width: 100%;
     font-size: 100%;
     vertical-align: baseline;
 }
 
 nav {
     position: relative;
-    width: 100%;
 }
 
 header {
     position: absolute;
-    width: 100%;
+    width: 900px;
     top: 0;
     padding: 0.6em;
     background-color: black;
@@ -23,7 +21,7 @@ header {
 
 footer {
     position: absolute;
-    width: 100%;
+    width: 900px;
     bottom: 0;
     padding: 0.6em;
     background-color: black;
