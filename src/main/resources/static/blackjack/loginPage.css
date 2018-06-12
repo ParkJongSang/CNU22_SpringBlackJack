@@ -167,6 +167,14 @@ img {
     }
 }
 
+#game {
+    background-image: url("./blackjack.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
 #lobby {
     background-image: url("diamond.png");
     height: 100%;
