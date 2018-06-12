@@ -61,7 +61,7 @@ body {
     display: inline-block;
 }
 
-#login_button, signup_button {
+#login_button, #signup_button {
     font: bold 13px "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
