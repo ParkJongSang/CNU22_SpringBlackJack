@@ -3,6 +3,7 @@ html {
     margin: 10px 0px;
     padding: 0;
     border: 0;
+    height: 100%;
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -36,6 +37,7 @@ body {
 
 #login {
     background-image: url("./open.png") ;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
