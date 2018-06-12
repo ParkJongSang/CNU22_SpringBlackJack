@@ -1,5 +1,5 @@
 /* Reset */
-html, body, div, span, b {
+html, body, div {
     margin: 0;
     padding: 0;
     border: 0;
@@ -7,19 +7,23 @@ html, body, div, span, b {
     vertical-align: baseline;
 }
 
-header {
-    margin: 0;
-    padding: 60px;
-    border: 1px solid black;
-    background-image: url("./diamond.jpg");
-    background-size: contain;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     font-size: 15px;
     line-height: 40px;
+}
+
+header {
+    margin: 0;
+    padding: 60px;
+    border: 1px solid black;
+}
+
+header #topBanner {
+    background-image: url("./diamond.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .clear {
