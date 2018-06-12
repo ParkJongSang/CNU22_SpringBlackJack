@@ -21,6 +21,9 @@ header {
 }
 
 header #topBanner {
+    margin: 0;
+    padding: 60px;
+    border: 1px solid black;
     background-image: url("./diamond.jpg");
     background-size: contain;
     background-repeat: no-repeat;
