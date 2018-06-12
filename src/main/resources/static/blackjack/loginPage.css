@@ -25,6 +25,20 @@ body {
     background-size: cover;
 }
 
+#topBanner {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    color: #008ae6;
+    font-size: 18px;
+    text-align: center;
+}
+
+#bottomBanner {
+    font-family: "Times New Roman", Georgia, serif;
+    color: #CCCCCC;
+    font-size: 10px;
+    text-align: left;
+}
+
 .clear {
     clear: both;
 }
