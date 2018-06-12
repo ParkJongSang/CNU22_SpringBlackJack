@@ -167,10 +167,12 @@ img {
     }
 }
 
-#game {
+#game:after {
     background-image: url("./blackjackBoard.png");
     height: 100%;
     background-repeat: repeat;
+    opacity:0.5!important;
+    z-index: -1;
 }
 
 #lobby {
