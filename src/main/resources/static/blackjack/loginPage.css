@@ -10,13 +10,13 @@ html {
 
 
 header {
-    position: absolute;
+    position: relative;
     padding: 8px;
     background-color: black;
 }
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     padding: 1px;
     background-color: black;
