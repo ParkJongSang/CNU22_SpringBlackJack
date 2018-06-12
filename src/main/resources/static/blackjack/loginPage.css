@@ -92,11 +92,6 @@ body {
     box-sizing: border-box; /* Opera/IE 8+ */
 }
 
-.loginPage {
-    width: 210px;
-    margin: 100px 100px 600px 200px;
-}
-
 .clear {
     clear: both;
 }
