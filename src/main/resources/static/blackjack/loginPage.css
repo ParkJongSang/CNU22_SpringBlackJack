@@ -167,6 +167,11 @@ img {
     }
 }
 
+#game {
+    position: relative;
+    z-index: 1;
+}
+
 #game:after {
     background-image: url("./blackjackBoard.png");
     position: absolute;
