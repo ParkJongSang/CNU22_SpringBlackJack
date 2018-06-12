@@ -133,7 +133,7 @@ img {
     background-color: #0099ff;
 }
 
-.blinkbackground {
+.blinkcss {
     font-weight:bold;
     animation: blink 1s step-end infinite;
     -webkit-animation: blink 1s step-end infinite;
