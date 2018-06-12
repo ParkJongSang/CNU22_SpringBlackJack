@@ -85,7 +85,7 @@ img {
 }
 
 #input_login_name:focus{
-    background-color: #0099ff;
+    background-color: lightskyblue;
 }
 
 #login_button, #signup_button {
