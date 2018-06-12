@@ -194,12 +194,14 @@ img {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
 }
 
 #create_room_button:hover {
     background-position: 0 -50px;
     color: white;
-    background-color: lightgray;
 }
 
 .lobbyPage {
