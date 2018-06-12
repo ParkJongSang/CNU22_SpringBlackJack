@@ -13,14 +13,14 @@ nav {
 
 header {
     position: relative;
-    padding: 8px;
+    padding: 1em;
     background-color: black;
 }
 
 footer {
     position: relative;
     bottom: 0px;
-    padding: 1px;
+    padding: 0.6em;
     background-color: black;
 }
 
@@ -49,6 +49,7 @@ body {
 #bottomBanner {
     color: #CCCCCC;
     font-size: 10px;
+    text-indent: 6px;
     text-align: justify;
 }
 
