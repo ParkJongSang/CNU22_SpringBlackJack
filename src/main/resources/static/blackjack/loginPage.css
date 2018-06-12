@@ -13,13 +13,13 @@ nav {
 
 header {
     position: relative;
-    padding: 1em;
+    padding: 0.6em;
     background-color: black;
 }
 
 footer {
-    position: relative;
-    margin-bottom: 0px;
+    width: 100%;
+    height: auto;
     padding: 0.6em;
     background-color: black;
 }
