@@ -18,16 +18,13 @@ header {
     margin: 0;
     padding: 60px;
     border: 1px solid black;
-    background-image: url("./diamond.jpg");
+    background-image: url("./open.jpg");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 header #topBanner {
-    font-family: "Bitstream Vera Sans Mono";
-    color: white;
-    font-size: 30px;
-    text-align: center;
+
 }
 
 .clear {
