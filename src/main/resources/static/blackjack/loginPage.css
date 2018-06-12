@@ -17,7 +17,6 @@ header {
     position: absolute;
     width: 100%;
     top: 0;
-    padding: 0.6em;
     background-color: black;
 }
 
@@ -25,7 +24,6 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0;
-    padding: 0.6em;
     background-color: black;
 }
 
