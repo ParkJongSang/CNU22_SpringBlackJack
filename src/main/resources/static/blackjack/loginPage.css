@@ -7,7 +7,7 @@ html {
     vertical-align: baseline;
 }
 
-header {
+header, footer {
     padding: 1em;
     background-color: black;
 }
@@ -20,7 +20,10 @@ body {
 }
 
 #login {
-    background: url("./open.jpg") no-repeat center center fixed;
+    background-image: url("./open.jpg") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center fixed;
 }
 
 #topBanner {
@@ -35,7 +38,6 @@ body {
     font-family: "Times New Roman", Georgia, serif;
     color: #CCCCCC;
     font-size: 10px;
-    text-align: left;
 }
 
 .clear {
