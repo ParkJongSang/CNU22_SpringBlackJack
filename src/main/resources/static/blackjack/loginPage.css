@@ -1,5 +1,6 @@
 /* Styling the Blackjack Web page */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 html {
     margin: 0;
@@ -175,7 +176,7 @@ img {
 }
 
 #create_room_button {
-    font: bold 20px "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important;
+    font: bold 40px 'Lobster', cursive;
     text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -186,7 +187,7 @@ img {
     white-space: nowrap;
     text-decoration: none;
     cursor: pointer;
-    background-color: black;
+    background-color: #0099ff;
     border-style: none;
     text-align: center;
     overflow: visible;
