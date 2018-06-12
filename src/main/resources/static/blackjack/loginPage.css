@@ -15,17 +15,25 @@ body {
 }
 
 header {
-    margin: 0;
+    margin: auto;
     padding: 60px;
     border: 1px solid black;
-    background-image: url("./open.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center fixed;
+    background: url("./open.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header #topBanner {
 
+}
+
+footer {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+    background-image: -we;
 }
 
 .clear {
