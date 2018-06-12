@@ -92,6 +92,11 @@ body {
     box-sizing: border-box; /* Opera/IE 8+ */
 }
 
+.loginPage {
+    width: 210px;
+    margin: 65% 65% 30% 30%;
+}
+
 .clear {
     clear: both;
 }
@@ -129,7 +134,7 @@ body {
 
 .buttons {
     width: 210px;
-    margin: 80px auto 0 auto;
+    margin: 20px auto 0 auto;
 }
 
 .flipped {
