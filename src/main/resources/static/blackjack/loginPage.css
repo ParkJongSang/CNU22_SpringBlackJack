@@ -199,11 +199,6 @@ img {
     box-sizing: border-box; /* Opera/IE 8+ */
 }
 
-#create_room_button:hover {
-    background-position: 0 -50px;
-    color: white;
-}
-
 .lobbyPage {
     position: absolute;
     top: 16%;
