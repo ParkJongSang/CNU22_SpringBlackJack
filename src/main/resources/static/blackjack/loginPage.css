@@ -140,13 +140,13 @@ img {
 }
 
 @keyframes blink {
-    0% {background-color: black; color: #0099ff;}
-    50% {background-color: #66ff66; color: red;}
+    0% {background-color: black;}
+    50% {background-color: #66ff66;}
 }
 
 @-webkit-keyframes blink {
-    0% {background-color: black; color: #0099ff;}
-    50% {background-color: #66ff66; color: red;}
+    0% {background-color: black;}
+    50% {background-color: #66ff66;}
 }
 
 .blinking {
