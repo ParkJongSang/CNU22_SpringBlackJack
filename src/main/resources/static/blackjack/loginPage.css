@@ -22,8 +22,8 @@ body {
 #login {
     background-image: url("./open.jpg") ;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 #topBanner {
@@ -35,9 +35,9 @@ body {
 }
 
 #bottomBanner {
-    font-family: "Times New Roman", Georgia, serif;
     color: #CCCCCC;
     font-size: 10px;
+    text-align: justify;
 }
 
 .clear {
