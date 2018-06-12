@@ -173,6 +173,7 @@ img {
 }
 
 #game:after {
+    content: "";
     background-image: url("./blackjackBoard.png");
     position: absolute;
     height: 100%;
