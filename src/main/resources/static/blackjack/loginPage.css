@@ -43,6 +43,10 @@ body {
     line-height: 40px;
 }
 
+input {
+    margin-top: 10px;
+}
+
 #login {
     background-image: url("./open.png");
     height: 100%;
