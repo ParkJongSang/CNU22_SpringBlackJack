@@ -189,7 +189,7 @@ img {
     background-image: url("./CNU_BLACKJACK.gif");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 100% 94%;
+    background-size: 100% 93%;
     background-position: center;
 }
 
@@ -219,8 +219,8 @@ img {
 
 .lobbyPage {
     position: absolute;
-    top: 36%;
-    left: 4%;
+    top: 33%;
+    left: 3%;
 }
 
 .clear {
