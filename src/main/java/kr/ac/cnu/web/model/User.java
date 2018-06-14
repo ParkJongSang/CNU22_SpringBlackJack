@@ -18,4 +18,5 @@ public class User {
     @Id
     private String name; //유저 이름
     private long account; //계좌 잔고
+
 }
