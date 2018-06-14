@@ -189,8 +189,8 @@ img {
     background-image: url("./CNU_BLACKJACK.gif"), url("./diamond.png");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 633px 271px, 100% 100%;
-    background-position: 0 0, center;
+    background-size: 20% 100%, 100% 100%;
+    background-position: top left, center;
 }
 
 #create_room_button {
