@@ -3,6 +3,7 @@ package kr.ac.cnu.web.controller.api;
 import kr.ac.cnu.web.exceptions.NoLoginException;
 import kr.ac.cnu.web.exceptions.NoUserException;
 import kr.ac.cnu.web.games.blackjack.GameRoom;
+import kr.ac.cnu.web.games.blackjack.Player;
 import kr.ac.cnu.web.model.User;
 import kr.ac.cnu.web.repository.UserRepository;
 import kr.ac.cnu.web.service.BlackjackService;
@@ -63,29 +64,36 @@ public class BlackApiController {
     @PostMapping(value = "/rooms/{roomId}/bet", consumes = MediaType.APPLICATION_JSON_VALUE)
     public GameRoom bet(@RequestHeader("name") String name, @PathVariable String roomId, @RequestBody long betMoney) {
         User user = this.getUserFromSession(name);
-
         return blackjackService.bet(roomId, user, betMoney);
     }
 
     @PostMapping("/rooms/{roomId}/hit")
     public GameRoom hit(@RequestHeader("name") String name, @PathVariable String roomId) {
         User user = this.getUserFromSession(name);
-
+        Player player = blackjackService.getGameRoom(roomId).getPlayerList().get(name);
+        user.setAccount(player.getBalance());
+        userRepository.save(user);
         return blackjackService.hit(roomId, user);
     }
 
     @PostMapping("/rooms/{roomId}/stand")
     public GameRoom stand(@RequestHeader("name") String name, @PathVariable String roomId) {
         User user = this.getUserFromSession(name);
-
-        return blackjackService.stand(roomId, user);
+        Player player = blackjackService.getGameRoom(roomId).getPlayerList().get(name);
+        GameRoom standService = blackjackService.stand(roomId, user);
+        user.setAccount(player.getBalance());
+        userRepository.save(user);
+        return standService;
     }
 
     @PostMapping("/rooms/{roomId}/doubledown")
     public GameRoom stand(@RequestHeader("name") String name, @PathVariable String roomId, @RequestBody long betMoney) {
         User user = this.getUserFromSession(name);
-
-        return blackjackService.doubledown (roomId, user, betMoney);
+        Player player = blackjackService.getGameRoom(roomId).getPlayerList().get(name);
+        GameRoom doubleService = blackjackService.doubledown(roomId, user, betMoney);
+        user.setAccount(player.getBalance());
+        userRepository.save(user);
+        return doubleService;
     }
 
     @GetMapping("/rooms/{roomId}")
