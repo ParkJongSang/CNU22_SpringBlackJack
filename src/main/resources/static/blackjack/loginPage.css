@@ -190,7 +190,7 @@ img {
     height: 100%;
     background-repeat: no-repeat;
     background-size: 633px 271px, 100% 100%;
-    background-position: center;
+    background-position: 0 0, center;
 }
 
 #create_room_button {
