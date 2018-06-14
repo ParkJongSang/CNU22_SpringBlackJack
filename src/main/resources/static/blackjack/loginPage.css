@@ -191,7 +191,7 @@ img {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    z-index: 0;
+    z-index: -1;
 }
 
 #create_room_button {
@@ -226,7 +226,7 @@ img {
 
 .team22Banner {
     background-image: url("./CNU_BLACKJACK.gif");
-    position: relative;
+    position: absolute;
     top: 10%;
     z-index: 1;
 }
