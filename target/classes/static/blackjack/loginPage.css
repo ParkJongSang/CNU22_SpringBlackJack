@@ -1,0 +1,575 @@
+/* Styling the Blackjack Web page */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+nav {
+    position: relative;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+img {
+    width: 5%;
+    float: left;
+}
+
+#login {
+    background-image: url("./open.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.topBanner {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    color: #0099ff;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+
+.bottomBanner {
+    color: #CCCCCC;
+    font-size: 10px;
+    text-indent: 16px;
+    text-align: justify;
+}
+
+#playerId, #playerMoney {
+    display: inline-block;
+}
+
+#input_login_name {
+    font: bold 20px "Helvetica Neue", Helvetica, Arial, clean, sans-serif;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 200px;
+    height: 26px;
+}
+
+#input_login_name:focus {
+    background-color: lightskyblue;
+}
+
+#login_button, #signup_button {
+    font: bold 13px "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    color: #0099ff;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: black;
+    border-style: none;
+    text-align: center;
+    overflow: visible;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 10px;
+    height: 40px;
+    width: 100px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.startMenu {
+    position: absolute;
+    right: 6%;
+    top: 22%;
+    text-align: left;
+}
+
+#login_button:hover, #signup_button:hover,
+#login_button:focus, #signup_button:focus {
+    background-position: 0 -50px;
+    color: white;
+    background-color: #0099ff;
+}
+
+.blinking {
+    -webkit-animation: blink 0.6s ease-in-out infinite alternate;
+    -moz-animation: blink 0.6s ease-in-out infinite alternate;
+    animation: blink 0.6s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#game {
+    position: relative;
+    z-index: 1;
+}
+
+#game::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("./blackjackBoard.png");
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#lobby {
+    background-image: url("diamond.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#create_room_button {
+    font: bold 91px Lobster, cursive !important;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
+    0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de,
+    0 0 100px #ff00de, 0 0 150px #ff00de;
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: black;
+    border-style: none;
+    text-align: center;
+    overflow: visible;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.lobbyPage {
+    position: absolute;
+    top: 16%;
+    left: 6%;
+}
+
+.clear {
+    clear: both;
+}
+
+.page {
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 500px;
+    text-align: center;
+}
+
+.dealer-cards .card, .player-cards .card {
+    margin-left: 5px;
+}
+
+.dealer-cards .card:first-child, .player-cards .card:first-child {
+    margin-left: 0;
+}
+
+.new-cards .card:first-child {
+    margin-left: 5px;
+}
+
+.dealer-cards, .player-cards {
+    padding-top: 50px;
+    /*width: 164px;*/
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.dealer-total, .player-total {
+    margin-top: 10px;
+}
+
+.buttons {
+    width: 210px;
+    margin: 20px auto 0 auto;
+}
+
+.flipped {
+    background-position: -158px -492px !important;
+}
+
+.test {
+    background-color: #0099ff;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    font: bold 13px "Helvetica Neue", Helvetica, Arial, clean, sans-serif !important;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #0099ff;
+    border-style: none;
+    text-align: center;
+    overflow: visible;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding-top: 10px;
+    height: 40px;
+    width: 100px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.btn:hover,
+.btn:focus {
+    background-position: 0 -50px;
+    color: white;
+    background-color: #c90059;
+}
+
+.btn:active {
+    background-color: #7c0d3e;
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: none;
+}
+
+.card {
+    background-image: url(./cards.png);
+    float: left;
+    height: 123px;
+    width: 79px;
+}
+
+.message {
+    font-size: 25px;
+    margin-top: 30px;
+    height: 60px;
+}
+
+/*.dealer-total{*/
+/*visibility: hidden;*/
+/*}*/
+
+/* Clubs */
+.ace-of-clubs {
+    background-position: 0 0;
+}
+
+.two-of-clubs {
+    background-position: -79px 0;
+}
+
+.three-of-clubs {
+    background-position: -158px 0;
+}
+
+.four-of-clubs {
+    background-position: -237px 0;
+}
+
+.five-of-clubs {
+    background-position: -316px 0;
+}
+
+.six-of-clubs {
+    background-position: -395px 0;
+}
+
+.seven-of-clubs {
+    background-position: -474px 0;
+}
+
+.eight-of-clubs {
+    background-position: -553px 0;
+}
+
+.nine-of-clubs {
+    background-position: -632px 0;
+}
+
+.ten-of-clubs {
+    background-position: -711px 0;
+}
+
+.jack-of-clubs {
+    background-position: -790px 0;
+}
+
+.queen-of-clubs {
+    background-position: -869px 0;
+}
+
+.king-of-clubs {
+    background-position: -948px 0;
+}
+
+/* Spades */
+.ace-of-spades {
+    background-position: 0 -123px;
+}
+
+.two-of-spades {
+    background-position: -79px -123px;
+}
+
+.three-of-spades {
+    background-position: -158px -123px;
+}
+
+.four-of-spades {
+    background-position: -237px -123px;
+}
+
+.five-of-spades {
+    background-position: -316px -123px;
+}
+
+.six-of-spades {
+    background-position: -395px -123px;
+}
+
+.seven-of-spades {
+    background-position: -474px -123px;
+}
+
+.eight-of-spades {
+    background-position: -553px -123px;
+}
+
+.nine-of-spades {
+    background-position: -632px -123px;
+}
+
+.ten-of-spades {
+    background-position: -711px -123px;
+}
+
+.jack-of-spades {
+    background-position: -790px -123px;
+}
+
+.queen-of-spades {
+    background-position: -869px -123px;
+}
+
+.king-of-spades {
+    background-position: -948px -123px;
+}
+
+/* Hearts */
+.ace-of-hearts {
+    background-position: 0 -246px;
+}
+
+.two-of-hearts {
+    background-position: -79px -246px;
+}
+
+.three-of-hearts {
+    background-position: -158px -246px;
+}
+
+.four-of-hearts {
+    background-position: -237px -246px;
+}
+
+.five-of-hearts {
+    background-position: -316px -246px;
+}
+
+.six-of-hearts {
+    background-position: -395px -246px;
+}
+
+.seven-of-hearts {
+    background-position: -474px -246px;
+}
+
+.eight-of-hearts {
+    background-position: -553px -246px;
+}
+
+.nine-of-hearts {
+    background-position: -632px -246px;
+}
+
+.ten-of-hearts {
+    background-position: -711px -246px;
+}
+
+.jack-of-hearts {
+    background-position: -790px -246px;
+}
+
+.queen-of-hearts {
+    background-position: -869px -246px;
+}
+
+.king-of-hearts {
+    background-position: -948px -246px;
+}
+
+/* Diamonds */
+.ace-of-diamonds {
+    background-position: 0 -369px;
+}
+
+.two-of-diamonds {
+    background-position: -79px -369px;
+}
+
+.three-of-diamonds {
+    background-position: -158px -369px;
+}
+
+.four-of-diamonds {
+    background-position: -237px -369px;
+}
+
+.five-of-diamonds {
+    background-position: -316px -369px;
+}
+
+.six-of-diamonds {
+    background-position: -395px -369px;
+}
+
+.seven-of-diamonds {
+    background-position: -474px -369px;
+}
+
+.eight-of-diamonds {
+    background-position: -553px -369px;
+}
+
+.nine-of-diamonds {
+    background-position: -632px -369px;
+}
+
+.ten-of-diamonds {
+    background-position: -711px -369px;
+}
+
+.jack-of-diamonds {
+    background-position: -790px -369px;
+}
+
+.queen-of-diamonds {
+    background-position: -869px -369px;
+}
+
+.king-of-diamonds {
+    background-position: -948px -369px;
+}
+
+.bet {
+    width: 50px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.betting-area {
+    width: 70px;
+    margin: 30px auto 30px auto;
+}
+
+.betting-area #more {
+    float: left;
+    width: 30px;
+}
+
+.betting-area #less {
+    float: left;
+    width: 30px;
+}
+
+.money {
+    color: green;
+    font-size: 21px;
+}
