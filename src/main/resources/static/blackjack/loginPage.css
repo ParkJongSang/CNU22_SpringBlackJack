@@ -186,11 +186,11 @@ img {
 }
 
 #lobby {
-    background-image: url("diamond.png");
+    background-image: url("./CNU_BLACKJACK.gif"), url("./diamond.png");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+    background-size: 633px 271px, 100% 100%;
+    background-position: 16%, center;
 }
 
 #create_room_button {
@@ -219,12 +219,8 @@ img {
 
 .lobbyPage {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 6%;
-}
-
-.team22Banner {
-    background-image: url("./CNU_BLACKJACK.gif");
 }
 
 .clear {
