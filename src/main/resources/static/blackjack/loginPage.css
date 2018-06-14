@@ -189,7 +189,7 @@ img {
     background-image: url("./CNU_BLACKJACK.gif"), url("./diamond.png");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 90% 30%, 100% 100%;
+    background-size: 80% 30%, 100% 100%;
     background-position: center 3%, center;
 }
 
@@ -219,7 +219,7 @@ img {
 
 .lobbyPage {
     position: absolute;
-    top: 67%;
+    top: 68%;
     left: 6%;
 }
 
