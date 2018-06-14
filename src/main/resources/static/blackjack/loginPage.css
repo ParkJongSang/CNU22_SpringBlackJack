@@ -186,11 +186,11 @@ img {
 }
 
 #lobby {
-    background-image: url("./CNU_BLACKJACK.gif"), url("./diamond.png");
+    background-image: url("./CNU_BLACKJACK.gif");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 90% 30%, 100% 100%;
-    background-position: center 5%, center;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 #create_room_button {
