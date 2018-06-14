@@ -59,14 +59,14 @@ img {
 
 .topBanner {
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
-    color: #0099ff;
+    color: white;
     font-weight: bold;
     font-size: 22px;
     text-align: center;
 }
 
 .bottomBanner {
-    color: white;
+    color: #CCCCCC;
     font-size: 10px;
     text-indent: 16px;
     text-align: justify;
@@ -189,7 +189,7 @@ img {
     background-image: url("./CNU_BLACKJACK.gif");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 100% 93%;
+    background-size: 100% 91%;
     background-position: center;
 }
 
@@ -310,7 +310,7 @@ img {
 .btn:focus {
     background-position: 0 -50px;
     color: white;
-    background-color: #c90059;
+    background-color: #0000ff;
 }
 
 .btn:active {
