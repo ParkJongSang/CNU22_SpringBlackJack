@@ -194,7 +194,7 @@ img {
 }
 
 #create_room_button {
-    font: bold 91px Lobster, cursive !important;
+    font: bold 50px Lobster, cursive !important;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
     0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de,
     0 0 100px #ff00de, 0 0 150px #ff00de;
@@ -219,8 +219,15 @@ img {
 
 .lobbyPage {
     position: absolute;
-    top: 16%;
+    top: 40%;
     left: 6%;
+}
+
+.team22Banner {
+    background-image: url("./CNU_BLACKJACK.gif");
+    position: absolute;
+    top: 10%;
+    z-index: 1;
 }
 
 .clear {
