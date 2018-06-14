@@ -59,7 +59,7 @@ img {
 
 .topBanner {
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
-    color: white;
+    color: #0099ff;
     font-weight: bold;
     font-size: 22px;
     text-align: center;
@@ -186,10 +186,10 @@ img {
 }
 
 #lobby {
-    background-image: url("./CNU_BLACKJACK.gif");
+    background-image: url("diamond.png");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 100% 91%;
+    background-size: 100% 100%;
     background-position: center;
 }
 
@@ -219,8 +219,15 @@ img {
 
 .lobbyPage {
     position: absolute;
-    top: 33%;
-    left: 3%;
+    top: 40%;
+    left: 6%;
+}
+
+.team22Banner {
+    background-image: url("./CNU_BLACKJACK.gif");
+    position: absolute;
+    top: 10%;
+    z-index: 1;
 }
 
 .clear {
@@ -310,7 +317,7 @@ img {
 .btn:focus {
     background-position: 0 -50px;
     color: white;
-    background-color: #0000ff;
+    background-color: #c90059;
 }
 
 .btn:active {
@@ -572,12 +579,4 @@ img {
 .money {
     color: green;
     font-size: 21px;
-}
-
-
-#Rank{
-    position:fixed;
-    z-index:999;
-    left:0px;
-    top : 200px;
 }
