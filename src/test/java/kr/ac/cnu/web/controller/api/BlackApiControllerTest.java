@@ -35,7 +35,7 @@ public class BlackApiControllerTest {
 
     @Test
     public void test_create_room() throws Exception {
-        when(userRepository.findById("Robin")).thenReturn(Optional.ofNullable(new User("Robin", 10000)));
+        when(userRepository.findById("Robin")).thenReturn(Optional.ofNullable(new User("Robin", new Long(10000))));
 
         mockMvc.perform(
                 post("/api/black-jack/rooms")

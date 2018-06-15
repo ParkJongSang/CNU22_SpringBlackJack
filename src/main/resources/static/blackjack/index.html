@@ -68,6 +68,9 @@
         <span id="money" class="money"></span>
         <div class="clear"></div>
     </div>
+    <div id="Rank">
+
+    </div>
 </nav>
 </body>
 <script src="./jquery-3.3.1.min.js"></script>
@@ -250,6 +253,22 @@
 
         $('#playerId').html(user.name); // [기능 추가] 화면 제일 윗쪽에 내 이름과 현재 내가 보유한 금액을 표시하기
         $('#playerMoney').html(gameRoom.playerList[user.name].balance);
+
+       $.ajax({
+            type: 'POST',
+            url: 'http://localhost:8080/api/black-jack/rooms/' + gameRoomId + '/rank',
+            headers: {
+                'name': user.name
+            },
+        }).done(function (data) {
+            $('#Rank').empty();
+            var rankString = "<ol>";
+            for(var i = 0; i < data.length; i++){
+                rankString = rankString + "<li>" + data[i].name + " " + data[i].account + "</li>";
+            }
+            rankString = rankString + "</ol>";
+            $('#Rank').append(rankString);
+        });
     }
 
     function generateCardDiv(rank, suit) {
