@@ -52,7 +52,7 @@
         <div class="btn" id="deal">Deal</div>
     </div>
     <div class="buttons">
-        <div class="btn" id="doubledown">Doubledown</div>
+        <div class="btn" id="doubleDown">Doubledown</div>
     </div>
     <div class="betting-area">
         <b>Your Bet</b><br>
@@ -148,6 +148,7 @@
             },
         }).done(function (data) {
             drawGameRoom(data);
+            $('#doubleDown').hide();
         });
     })
 
@@ -163,12 +164,12 @@
         });
     })
 
-    $('#doubledown').click(function () {
+    $('#doubleDown').click(function () {
         var bet = parseInt($('#bet').html());
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:8080/api/black-jack/rooms/' + gameRoomId + '/doubledown',
+            url: 'http://localhost:8080/api/black-jack/rooms/' + gameRoomId + '/doubleDown',
             headers: {
                 'name': user.name
             },
@@ -177,7 +178,7 @@
         }).done(function (data) {
             drawGameRoom(data);
             $('#hit').hide();
-            $('#doubledown').hide();
+            $('#doubleDown').hide();
         });
     })
 
