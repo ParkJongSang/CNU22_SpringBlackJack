@@ -581,3 +581,11 @@ img {
     color: green;
     font-size: 21px;
 }
+
+
+#Rank{
+    position:fixed;
+    z-index:999;
+    left:0px;
+    top : 200px;
+}
