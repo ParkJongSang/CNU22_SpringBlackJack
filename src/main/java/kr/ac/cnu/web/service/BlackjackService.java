@@ -78,7 +78,7 @@ public class BlackjackService {
     public GameRoom doubleDown(String roomId, User user, long bet) {
         GameRoom gameRoom = gameRoomMap.get(roomId);
 
-        gameRoom.bet(user.getName(),bet*2);
+        gameRoom.bet(user.getName(), bet);
         gameRoom.hit(user.getName());
 
         return gameRoom;
