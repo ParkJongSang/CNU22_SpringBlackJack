@@ -33,6 +33,7 @@ public class Player {
 
     //플레이어의 금액 배팅
     public void placeBet(long bet) {
+        this.currentBet = 0; //현재 배팅금액을 0으로 초기화
         //배팅 금액보다 시드머니가 모자라면
         if (balance < bet) {
             //시드머니가 충분치 않으므로 예외처리
@@ -40,7 +41,7 @@ public class Player {
         }
         //충분하면
         balance -= bet; //배팅 금액만큼 시드머니에서 빼주고
-        currentBet = bet; //현재 배팅 금액으로 건다
+        currentBet += bet; //현재 배팅 금액에 더해준다
         //게임 진행중
         isPlaying = true;
     }
