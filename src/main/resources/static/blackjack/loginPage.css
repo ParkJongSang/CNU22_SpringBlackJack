@@ -59,7 +59,7 @@ img {
 
 .topBanner {
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
-    color: #0099ff;
+    color: white;
     font-weight: bold;
     font-size: 22px;
     text-align: center;
@@ -186,15 +186,15 @@ img {
 }
 
 #lobby {
-    background-image: url("diamond.png");
+    background-image: url("./CNU_BLACKJACK.gif");
     height: 100%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 91%;
     background-position: center;
 }
 
 #create_room_button {
-    font: bold 91px Lobster, cursive !important;
+    font: bold 50px Lobster, cursive !important;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff,
     0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de,
     0 0 100px #ff00de, 0 0 150px #ff00de;
@@ -219,8 +219,8 @@ img {
 
 .lobbyPage {
     position: absolute;
-    top: 16%;
-    left: 6%;
+    top: 33%;
+    left: 3%;
 }
 
 .clear {
@@ -310,7 +310,7 @@ img {
 .btn:focus {
     background-position: 0 -50px;
     color: white;
-    background-color: #c90059;
+    background-color: #0000ff;
 }
 
 .btn:active {
