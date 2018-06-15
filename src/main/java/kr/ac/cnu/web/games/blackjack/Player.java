@@ -40,7 +40,7 @@ public class Player {
         }
         //충분하면
         balance -= bet; //배팅 금액만큼 시드머니에서 빼주고
-        currentBet = bet; //현재 배팅 금액으로 건다
+        currentBet += bet; //현재 배팅 금액에 더해준다
         //게임 진행중
         isPlaying = true;
     }

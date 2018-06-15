@@ -44,7 +44,7 @@ public class Evaluator {
             //플레이어의 점수가 딜러의 점수와 같으면 무승부(타이)
             else if (playerResult == dealerResult) {
                 //딜러와 플레이어가 동시에 블랙잭이라면 딜러가 승리한다
-                if (dealerResult == 21) {
+                if (dealerResult==21 && dealer.getHand().getNumberOfCards()==2) {
                     player.lost();
                 } else
                     player.tie();

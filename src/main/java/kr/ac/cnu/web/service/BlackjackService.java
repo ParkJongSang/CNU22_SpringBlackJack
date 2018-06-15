@@ -31,7 +31,7 @@ public class BlackjackService {
 
     //여러 명의 플레이어가 참여하는 게임 테이블 생성
     public GameRoom joinGameRoom(String roomId, User user) {
-        //보류 (미완성)
+        //Multiplayer가 아니므로 구현할 필요가 없다
         return null;
     }
 
@@ -75,10 +75,10 @@ public class BlackjackService {
     }
 
     //더블다운
-    public GameRoom doubledown(String roomId, User user, long bet) {
+    public GameRoom doubleDown(String roomId, User user, long bet) {
         GameRoom gameRoom = gameRoomMap.get(roomId);
 
-        gameRoom.bet(user.getName(), bet * 2);
+        gameRoom.bet(user.getName(), bet);
         gameRoom.hit(user.getName());
 
         return gameRoom;
