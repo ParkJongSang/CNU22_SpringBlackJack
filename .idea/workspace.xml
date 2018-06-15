@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bad8ac21-08ff-4ec0-9943-4a7ab127d33d" name="Default" comment="[buf fix]게임 종료 후 결과를 DB에 반영">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blackjack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blackjack/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/blackjack/loginPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/blackjack/loginPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/kr/ac/cnu/web/controller/api/BlackApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/kr/ac/cnu/web/controller/api/BlackApiControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/controller/api/BlackApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/controller/api/BlackApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blackjack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blackjack/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/kr/ac/cnu/web/controller/api/BlackApiControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/kr/ac/cnu/web/controller/api/BlackApiControllerTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BlackApiController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BlackApiController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="118" column="52" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
+            <state relative-caret-position="300">
+              <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4027#4028#0" expanded="true" />
@@ -43,13 +36,13 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/blackjack/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="264" column="36" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
+            <state relative-caret-position="270">
+              <caret line="146" column="25" lean-forward="true" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="loginPage.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="loginPage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/static/blackjack/loginPage.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="738">
@@ -61,7 +54,7 @@
       <file leaf-file-name="GameRoom.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/games/blackjack/GameRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
+            <state relative-caret-position="12">
               <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
             </state>
           </provider>
@@ -90,10 +83,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>buttons</find>
-      <find>hit</find>
       <find>deal</find>
       <find>doubledown</find>
       <find>gameRoom</find>
+      <find>hit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -117,9 +110,9 @@
         <option value="$PROJECT_DIR$/src/test/java/kr/ac/cnu/web/controller/api/BlackApiControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/kr/ac/cnu/web/service/BankServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/blackjack/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/blackjack/loginPage.css" />
+        <option value="$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java" />
       </list>
     </option>
   </component>
@@ -748,13 +741,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/blackjack/winnerLogo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/kr/ac/cnu/web/controller/api/BlackApiControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -769,22 +755,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/blackjack/loginPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="118" column="52" selection-start-line="118" selection-start-column="52" selection-end-line="118" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4027#4028#0" expanded="true" />
-            <element signature="e#4086#4087#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="738">
+          <caret line="581" column="16" selection-start-line="581" selection-start-column="16" selection-end-line="581" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/games/blackjack/GameRoom.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+        <state relative-caret-position="210">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -795,17 +776,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/blackjack/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/games/blackjack/GameRoom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="264" column="36" selection-start-line="264" selection-start-column="36" selection-end-line="264" selection-end-column="36" />
+        <state relative-caret-position="12">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/blackjack/loginPage.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/blackjack/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="581" column="16" selection-start-line="581" selection-start-column="16" selection-end-line="581" selection-end-column="16" />
+        <state relative-caret-position="270">
+          <caret line="146" column="25" lean-forward="true" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4027#4028#0" expanded="true" />
+            <element signature="e#4086#4087#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

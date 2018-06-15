@@ -72,7 +72,7 @@ public class BlackApiController {
     public GameRoom hit(@RequestHeader("name") String name, @PathVariable String roomId) {
         User user = this.getUserFromSession(name);
         Player player = blackjackService.getGameRoom(roomId).getPlayerList().get(name);
-        GameRoom hitService = blackjackService.hit(name, user);
+        GameRoom hitService = blackjackService.hit(roomId, user);
         user.setAccount(player.getBalance());
         userRepository.save(user);
         return hitService;
