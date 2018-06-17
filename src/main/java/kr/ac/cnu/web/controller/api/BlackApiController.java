@@ -107,7 +107,7 @@ public class BlackApiController {
     public List rank(@RequestHeader("name") String name, @PathVariable String roomId) {
         List<User> userList = userRepository.findAll();
         List<User> rankList = decendingSort(userList);
-        return userList;
+        return rankList;
     }
 
     private User getUserFromSession(String name) {
