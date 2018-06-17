@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bad8ac21-08ff-4ec0-9943-4a7ab127d33d" name="Default" comment="[buf fix]게임 종료 후 결과를 DB에 반영">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/ac/cnu/web/controller/api/BlackApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/controller/api/BlackApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/controller/api/BlackApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/games/blackjack/Evaluator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/games/blackjack/Evaluator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/games/blackjack/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/games/blackjack/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/service/BlackjackService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kr/ac/cnu/web/service/BlackjackService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blackjack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blackjack/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/blackjack/loginPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/blackjack/loginPage.css" afterDir="false" />
-    </list>
+    <list default="true" id="bad8ac21-08ff-4ec0-9943-4a7ab127d33d" name="Default" comment="[buf fix]게임 종료 후 결과를 DB에 반영" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
